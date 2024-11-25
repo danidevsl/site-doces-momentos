@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doces Momentos</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="icon" href="assets/images/cake-icon.png">
+        <script>
+            // Função para exibir a mensagem de demonstração
+            function showDemoMessage(event) {
+                event.preventDefault(); // Impede o redirecionamento
+                alert("Isso é uma demonstração");
+            }
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h1>Bem-vindo à nossa Loja de Bolos!</h1>
+            <p>Os melhores bolos feitos com amor e dedicação.</p>
+            <a href="#produtos" class="cta-btn" onclick="showDemoMessage(event)">Veja nossos produtos</a>
+        </section>
+
+        <section id="produtos">
+            <h2>Nosso Cardápio de Bolos</h2>
+            <div class="gallery-container">
+                <!-- Bolo de Chocolate -->
+                <div class="product" data-name="Bolo de Chocolate" data-size="Médio" data-price="40,00">
+                    <img src="assets/images/bolo-chocolate.jpg" alt="Bolo de Chocolate">
+                    <div class="product-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p class="product-size">Tamanho: Médio</p>
+                        <p class="product-price">R$ 40,00</p>
+                        <a href="#" class="order-btn" onclick="showDemoMessage(event)">Faça seu pedido</a>
+                    </div>
+                </div>
+
+                <!-- Bolo de Frutas -->
+                <div class="product" data-name="Bolo de Frutas" data-size="Grande" data-price="50,00">
+                    <img src="assets/images/bolo-frutas.jpg" alt="Bolo de Frutas">
+                    <div class="product-info">
+                        <h3>Bolo de Frutas</h3>
+                        <p class="product-size">Tamanho: Grande</p>
+                        <p class="product-price">R$ 50,00</p>
+                        <a href="#" class="order-btn" onclick="showDemoMessage(event)">Faça seu pedido</a>
+                    </div>
+                </div>
+
+                <!-- Bolo de Morango -->
+                <div class="product" data-name="Bolo de Morango" data-size="Pequeno" data-price="35,00">
+                    <img src="assets/images/bolo-morango.jpg" alt="Bolo de Morango">
+                    <div class="product-info">
+                        <h3>Bolo de Morango</h3>
+                        <p class="product-size">Tamanho: Pequeno</p>
+                        <p class="product-price">R$ 35,00</p>
+                        <a href="#" class="order-btn" onclick="showDemoMessage(event)">Faça seu pedido</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato Conosco!</h2>
+            <p>Fale conosco pelo WhatsApp ou siga-nos nas redes sociais!</p>
+            <div class="contact">
+                <a href="#" class="contact-btn" onclick="showDemoMessage(event)">Falar no WhatsApp</a>
+                <a href="#" class="contact-btn" onclick="showDemoMessage(event)">Instagram</a>
+                <a href="#" class="contact-btn" onclick="showDemoMessage(event)">Facebook</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Loja de Bolos - Todos os direitos reservados</p>
+        </footer>
+
+        <!-- Botão fixo para retornar ao portfólio -->
+        <a href="https://portifolio-danilo-jorge.netlify.app/" id="portfolioButton" class="portfolio-btn">Retornar ao Portfólio</a>
+
+        <script src="assets/scripts/script.js"></script>
+    </body>
+</html>

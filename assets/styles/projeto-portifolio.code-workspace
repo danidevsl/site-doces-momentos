@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../danidevsl-portfolio"
+		},
+		{
+			"path": "../../../simple-calculator"
+		},
+		{
+			"path": "../../../to-do-list"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,223 @@
+/* Resetando o padrão de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Azul claro */
+  color: #333;
+}
+
+header {
+  background-color: #f06292; /* Rosa */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header .logo img {
+  height: 280px;
+  width: auto;
+  position: absolute;
+  padding-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+section#home p {
+  margin-bottom: 40px;
+}
+
+section#home {
+  background-color: #ffcccb; /* Rosa claro */
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #f06292; /* Rosa */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background-color: #ec407a; /* Rosa mais escuro */
+}
+
+section#produtos h2 {
+  padding-bottom: 10px;
+}
+
+section#produtos {
+  background-color: #ffffff;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+.product-size {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #f06292; /* Rosa */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.order-btn {
+  background-color: #f06292; /* Rosa */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.order-btn:hover {
+  background-color: #ec407a; /* Rosa mais escuro */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+section#contato {
+  background-color: #b3e5fc; /* Azul claro */
+}
+
+section#contato p {
+  padding: 20px;
+}
+
+.contact-btn {
+  background-color: #f06292; /* Rosa */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  background-color: #ec407a; /* Rosa mais escuro */
+}
+
+footer {
+  background-color: #795548; /* Marrom */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Estilo para o botão fixo de Portfólio */
+.portfolio-btn {
+  position: fixed; /* Fixar o botão na tela */
+  bottom: 10px;    /* Distância de 10px do fundo da tela */
+  right: 10px;     /* Distância de 10px da borda direita */
+  background-color: #3498db; /* Cor de fundo azul */
+  color: white;    /* Cor do texto */
+  padding: 10px 20px; /* Menor padding para diminuir o tamanho */
+  font-size: 14px;  /* Fonte menor para telas pequenas */
+  font-weight: bold; /* Negrito para destaque */
+  border-radius: 25px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  z-index: 9999;    /* Garante que o botão fique acima de outros elementos */
+  transition: background-color 0.3s, transform 0.1s ease; /* Transições suaves */
+}
+
+/* Efeito de hover para o botão */
+.portfolio-btn:hover {
+  background-color: #2980b9; /* Cor de fundo mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+/* Efeito ao clicar no botão */
+.portfolio-btn:active {
+  transform: scale(0.98); /* Efeito de clique (diminui levemente o botão) */
+}
+
+/* Ajustes responsivos para telas menores */
+
+/* Telas pequenas (tablets e celulares) */
+@media (max-width: 768px) {
+  .portfolio-btn {
+    padding: 8px 16px;  /* Padding reduzido para telas pequenas */
+    font-size: 12px;     /* Fonte menor para telas pequenas */
+    bottom: 10px;        /* Mantém uma distância pequena do fundo */
+    right: 10px;         /* Distância ajustada da borda direita */
+  }
+}
+
+/* Telas muito pequenas (celulares verticais) */
+@media (max-width: 480px) {
+  .portfolio-btn {
+    padding: 6px 12px;  /* Menor padding para maximizar espaço */
+    font-size: 10px;     /* Fonte ainda menor */
+    bottom: 10px;        /* Distância muito próxima do fundo */
+    right: 10px;         /* Distância bem próxima da borda direita */
+  }
+}
